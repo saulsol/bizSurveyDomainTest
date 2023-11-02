@@ -1,2 +1,3 @@
-package com.example.bizsurveydomainpr.domain.claim;public class Claim {
+package com.example.bizsurveydomainpr.domain.claim;
+public class Claim {
 }
