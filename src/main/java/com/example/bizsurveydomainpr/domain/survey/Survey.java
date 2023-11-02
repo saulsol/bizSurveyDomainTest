@@ -1,7 +1,8 @@
-package com.example.bizsurveydomainpr.domain.workspace;
+package com.example.bizsurveydomainpr.domain.survey;
 
-import com.example.bizsurveydomainpr.constant.WorkspaceType;
+
 import com.example.bizsurveydomainpr.domain.user.User;
+import com.example.bizsurveydomainpr.domain.workspace.Workspace;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,22 +12,28 @@ import javax.persistence.*;
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-@Table(name = "workspace")
-public class Workspace {
+@Table(name = "survey")
+public class Survey {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "workspace_id")
+    @Column(name = "survey_id")
     private Long id;
 
-    private String workspaceName;
-
-    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private WorkspaceType type;
+    private String title;
+
+
+    private String content;
+
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "workspace_id")
+    private Workspace workspace;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
     private User user;
+
 
 }
