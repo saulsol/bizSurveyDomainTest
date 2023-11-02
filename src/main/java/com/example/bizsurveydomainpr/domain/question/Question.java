@@ -1,6 +1,7 @@
 package com.example.bizsurveydomainpr.domain.question;
 
 
+import com.example.bizsurveydomainpr.constant.AnswerType;
 import com.example.bizsurveydomainpr.domain.BaseEntity;
 import com.example.bizsurveydomainpr.domain.survey.Survey;
 import lombok.AccessLevel;
@@ -25,7 +26,7 @@ public class Question extends BaseEntity {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private String answerType;
+    private AnswerType answerType;
 
     private int score;
 
