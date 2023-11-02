@@ -1,6 +1,7 @@
 package com.example.bizsurveydomainpr.domain.survey;
 
 
+import com.example.bizsurveydomainpr.constant.SurveyType;
 import com.example.bizsurveydomainpr.domain.user.User;
 import com.example.bizsurveydomainpr.domain.workspace.Workspace;
 import lombok.AccessLevel;
@@ -25,6 +26,9 @@ public class Survey {
 
 
     private String content;
+
+    @Enumerated(EnumType.STRING)
+    private SurveyType type;
 
 
     @ManyToOne(fetch = FetchType.LAZY)

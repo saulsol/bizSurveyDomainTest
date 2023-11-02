@@ -2,7 +2,6 @@ package com.example.bizsurveydomainpr.domain.question;
 
 
 import com.example.bizsurveydomainpr.domain.survey.Survey;
-import com.example.bizsurveydomainpr.domain.user.User;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
