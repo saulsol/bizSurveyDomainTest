@@ -40,5 +40,7 @@ public class User {
 
     @Enumerated(EnumType.STRING)
     private Plan planSubscribe;
+    
+    // 새로운 거 반영
 
 }
