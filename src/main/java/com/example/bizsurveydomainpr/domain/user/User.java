@@ -3,9 +3,7 @@ package com.example.bizsurveydomainpr.domain.user;
 import com.example.bizsurveydomainpr.constant.Gender;
 import com.example.bizsurveydomainpr.constant.Plan;
 import com.example.bizsurveydomainpr.domain.BaseEntity;
-import lombok.AccessLevel;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 

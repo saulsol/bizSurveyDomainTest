@@ -2,6 +2,7 @@ package com.example.bizsurveydomainpr.domain.voteAnswer;
 
 import com.example.bizsurveydomainpr.domain.vote.Vote;
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
