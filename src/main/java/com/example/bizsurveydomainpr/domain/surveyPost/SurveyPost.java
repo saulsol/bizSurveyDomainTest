@@ -16,7 +16,7 @@ public class SurveyPost {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "survey_psot_id")
+    @Column(name = "survey_post_id")
     private Long id;
 
     @Column(nullable = false)
