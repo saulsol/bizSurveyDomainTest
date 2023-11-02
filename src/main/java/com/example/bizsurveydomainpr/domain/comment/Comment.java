@@ -1,5 +1,6 @@
 package com.example.bizsurveydomainpr.domain.comment;
 
+import com.example.bizsurveydomainpr.domain.BaseEntity;
 import com.example.bizsurveydomainpr.domain.post.Post;
 import com.example.bizsurveydomainpr.domain.user.User;
 import lombok.AccessLevel;
@@ -12,7 +13,7 @@ import javax.persistence.*;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Table(name = "comment")
-public class Comment {
+public class Comment extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
