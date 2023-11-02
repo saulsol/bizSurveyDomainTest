@@ -1,6 +1,7 @@
 package com.example.bizsurveydomainpr.domain.claim;
 
 
+import com.example.bizsurveydomainpr.constant.ClaimList;
 import com.example.bizsurveydomainpr.constant.ClaimType;
 import com.example.bizsurveydomainpr.domain.BaseEntity;
 import com.example.bizsurveydomainpr.domain.user.User;
@@ -29,6 +30,9 @@ public class Claim extends BaseEntity {
     private Long logicalKey;
     // 논리적 키
 
+    @Enumerated(EnumType.STRING)
+    private ClaimList claimReason;
+    // 신고 사유 Enum 처리해야함
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
