@@ -1,6 +1,7 @@
 package com.example.bizsurveydomainpr.domain.workspace;
 
 import com.example.bizsurveydomainpr.constant.WorkspaceType;
+import com.example.bizsurveydomainpr.domain.BaseEntity;
 import com.example.bizsurveydomainpr.domain.user.User;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -12,7 +13,7 @@ import javax.persistence.*;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Table(name = "workspace")
-public class Workspace {
+public class Workspace extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
