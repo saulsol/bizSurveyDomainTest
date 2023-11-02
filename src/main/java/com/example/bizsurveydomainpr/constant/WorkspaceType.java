@@ -1,7 +1,8 @@
 package com.example.bizsurveydomainpr.constant;
 
 public enum WorkspaceType {
-    //일반 personal, 기업 company
-    PERSONAL, COMPANY
+
+    PERSONAL, // 개인 워크스페이스
+    COMPANY  // 기업 워크스페이스
 
 }
