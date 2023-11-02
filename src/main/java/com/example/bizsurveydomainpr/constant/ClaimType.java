@@ -1,2 +1,5 @@
-package com.example.bizsurveydomainpr.constant;public enum ClaimType {
+package com.example.bizsurveydomainpr.constant;
+
+public enum ClaimType {
+    POST, COMMENT, CHILD_COMMENT
 }
