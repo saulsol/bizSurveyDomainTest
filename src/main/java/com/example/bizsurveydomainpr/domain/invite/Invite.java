@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Entity
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
-@Table(name = "workspace")
+@Table(name = "invite")
 public class Invite extends BaseEntity {
 
     @Id
