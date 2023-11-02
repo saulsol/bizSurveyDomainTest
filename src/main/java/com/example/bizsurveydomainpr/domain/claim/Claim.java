@@ -29,9 +29,9 @@ public class Claim extends BaseEntity {
     private Long key;
     // 논리적 키
 
-    // private String reason;
+    @Enumerated(EnumType.STRING)
+    private ClaimType reason;
     // 신고 사유 Enum 처리해야함
-
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
