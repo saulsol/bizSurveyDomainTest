@@ -1,5 +1,6 @@
 package com.example.bizsurveydomainpr.domain.claim;
 
+
 import com.example.bizsurveydomainpr.constant.ClaimType;
 import com.example.bizsurveydomainpr.domain.BaseEntity;
 import com.example.bizsurveydomainpr.domain.user.User;
