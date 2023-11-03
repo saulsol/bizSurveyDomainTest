@@ -28,11 +28,11 @@ public class SurveyPost extends BaseEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "post_id")
-    Post post;
+    private Post post;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "survey_id")
-    Survey survey;
+    private Survey survey;
 
 
 
