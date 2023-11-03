@@ -7,8 +7,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 
 @SpringBootTest
 @Slf4j
@@ -22,9 +20,9 @@ class UserEntityRepositoryTest {
 
 
         User user = User.builder()
-                .email("1244332")
+                .email("124434432")
                 .name("4342")
-                .nickname("323442")
+                .nickname("3234642")
                 .gender(Gender.FEMALE)
                 .birthdate("34234")
                 .planSubscribe(Plan.NORMAL_SUBSCRIBE)
